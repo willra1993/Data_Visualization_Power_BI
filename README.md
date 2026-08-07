@@ -34,11 +34,3 @@ Coleção de projetos de análise e visualização de dados desenvolvidos no Pow
 ## Fontes e limitações
 
 As fontes específicas, o período de cobertura e as limitações de cada conjunto de dados estão descritos no README de cada projeto. Os resultados devem ser interpretados de acordo com a data e a metodologia da fonte original.
-
-## Contribuição
-
-Sugestões, correções e melhorias são bem-vindas. Antes de enviar uma alteração, consulte o [guia de contribuição](./CONTRIBUTING.md).
-
----
-
-Desenvolvido por [William Araujo](https://github.com/willra1993).
