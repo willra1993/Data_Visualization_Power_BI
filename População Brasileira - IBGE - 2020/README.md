@@ -1,46 +1,55 @@
-# Relatório do Power BI: Distribuição Populacional no Brasil - IBGE 2020
+# População brasileira estimada — IBGE 2020
 
-Bem-vindo ao repositório do relatório do Power BI que apresenta informações detalhadas sobre a distribuição populacional no Brasil, de acordo com os dados do IBGE de 2020. Este relatório oferece uma visão abrangente e interativa dos dados populacionais, incluindo distribuição por regiões, estados e municípios.
+Dashboard interativo sobre a distribuição da população brasileira estimada em 2020. O relatório combina dados municipais, regiões, unidades federativas e coordenadas geográficas para apresentar indicadores, rankings e mapas.
 
-## Conteúdo :books:
+[Voltar ao portfólio](../README.md) · [Consultar o dicionário de dados](./DATA_DICTIONARY.md)
 
-1. Visão Geral do Relatório
-2. Funcionalidades
-3. Requisitos
-4. Como Usar
-5. Fonte de Dados
-6. Contribuições
+## Visão geral
 
-## 1. Visão Geral do Relatório :cityscape:
+| Item | Detalhe |
+| --- | --- |
+| Referência | Estimativa populacional de 2020 |
+| Municípios | 5.570 |
+| Unidades federativas | 27 |
+| População estimada na base | 211.755.692 habitantes |
+| Arquivo principal | `População Brasileira Estimada - 2020 - IBGE.pbix` |
+| Fonte local | `Database/BASES - IBGE - 2020.xlsx` |
 
-Este relatório foi desenvolvido no Power BI Desktop e oferece diversas visualizações interativas para explorar dados populacionais do Brasil. O relatório inclui:
+## O que o dashboard permite analisar
 
-1. Análise demográfica por região, estado e município.
-2. Insights sobre densidade populacional e urbanização.
+- população estimada por município, estado e região;
+- participação de cada localidade no total;
+- municípios mais e menos populosos;
+- distribuição geográfica por meio de mapa;
+- comparação entre estados e regiões com filtros interativos.
 
-## 2. Funcionalidades :gear:
+O relatório possui uma página analítica com cartões, gráficos de barras e colunas, gráfico de rosca, tabelas, filtros e um mapa.
 
-1. **Filtros Interativos:** Permitem refinar os dados por região, estado e município.
-2. **Gráficos e Visualizações:** ncluem gráficos de barras, linhas, mapas e tabelas para apresentar os dados de maneira clara e intuitiva.
-3. **Menu Retrátil:** Painéis que resumem informações-chave sobre a distribuição populacional no Brasil.
+## Como abrir
 
-## 3. Requisitos :desktop_computer:
+1. Baixe esta pasta completa.
+2. Abra `População Brasileira Estimada - 2020 - IBGE.pbix` no Power BI Desktop.
+3. Caso a conexão esteja quebrada, acesse **Transformar dados** no Power Query.
+4. Em cada consulta que usa a planilha, atualize a etapa **Fonte** para o caminho local de `Database/BASES - IBGE - 2020.xlsx`.
+5. Selecione **Fechar e aplicar** e atualize o relatório.
 
-Para visualizar e interagir com o relatório, será necessário:
+## Estrutura da base
 
-1. Possuir versão de Maio/2024 ou mais recente do Power BI Desktop
-2. certifique-se de ter baixado o arquibo .pbix desta pasta, bem como a base de dados
+A planilha possui três abas:
 
-## 4. Como Usar :file_folder:
+- `BRASIL_E_UFs`: relação entre unidade federativa, região e sigla;
+- `COORDENADAS`: latitude e longitude de referência para cada UF;
+- `MUNICIPIOS`: códigos, nomes e população estimada dos 5.570 municípios.
 
-1. Baixe o arquivo `População Brasileira Estimada - 2020 - IBGE.pbix` e o arquivo `BASES - IBGE - 2020.xlsx` presentes neste repositório
-2. Ao abrir o arquivo .pbix citado no passo anterior, entre no Power Query ao clicar em 'Transformar Dados'
-3. Para cada consulta presente no Power Query, clique na etapa 'Fonte', e altere a localização da base de dados para o caminho em sua máquina local onde baixou o arquivo 'BASES - IBGE - 2020.xlsx'.
+Consulte [DATA_DICTIONARY.md](./DATA_DICTIONARY.md) para a descrição campo a campo.
 
-## 5. Fonte de Dados :link:
+## Fonte dos dados
 
-Os dados utilizados para a criação deste relatório foram obtidos no seguinte link: https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2020/estimativa_dou_2020.pdf
+- [Estimativas da População 2020 — IBGE](https://ftp.ibge.gov.br/Estimativas_de_Populacao/Estimativas_2020/estimativa_dou_2020.pdf)
 
-## 6. Contribuições :handshake:
+## Limitações
 
-Caso tenha sugestões de melhorias ou encontre algum problema, sinta-se à vontade para fazer um fork do repositório, realizar as alterações necessárias e enviar um pull request.
+- Os valores são estimativas com referência em 2020, não resultados do Censo Demográfico de 2022.
+- Coordenadas representam pontos de referência das UFs e não limites geográficos.
+- Comparações atuais exigem uma fonte mais recente e a atualização do modelo.
+- O arquivo `.pbix` é binário e precisa do Power BI Desktop para ser explorado.

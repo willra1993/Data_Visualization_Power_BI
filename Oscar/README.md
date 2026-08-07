@@ -1,48 +1,71 @@
-# Relatório do Power BI: Premiações do Oscar (1927-2023) :clapper:
+# Premiações do Oscar
 
-Bem-vindo ao repositório do relatório do Power BI que apresenta informações detalhadas sobre as premiações do Oscar, abrangendo o período de 1927 até 2023. Este relatório oferece uma visão abrangente e interativa dos dados históricos das premiações, incluindo categorias, vencedores, indicados, tendências ao longo dos anos e muito mais.
+![Banner do projeto Oscar](./Layout/oscar%20banner.png)
 
-## Conteúdo :books:
+Dashboard interativo sobre a história das premiações do Oscar. O relatório conecta indicações e vencedores a informações de filmes, avaliações e perfis de atores e atrizes, oferecendo diferentes caminhos de exploração.
 
-1. Visão Geral do Relatório
-2. Funcionalidades
-3. Requisitos
-4. Como Usar
-5. Fonte de Dados
-6. Contribuições
+[Voltar ao portfólio](../README.md) · [Consultar o dicionário de dados](./DATA_DICTIONARY.md)
 
-## 1. Visão Geral do Relatório :trophy:
+## Visão geral
 
-Este relatório foi desenvolvido no Power BI Desktop e oferece diversas visualizações interativas para explorar dados históricos das premiações do Oscar. O relatório inclui:
+| Item | Detalhe |
+| --- | --- |
+| Cobertura | Filmes de 1927 a 2022; cerimônias até 2023 |
+| Registros de indicações | 10.764 |
+| Categorias históricas | 115 |
+| Filmes distintos | 4.986 |
+| Resultado | 2.438 vencedores e 8.326 indicados |
+| Arquivo principal | `Oscar - Histórico.pbix` |
+| Fonte local | `Database/Database.xlsx` |
 
-1. Análise por ano, categoria, filme, atores e atrizes
-2. Distribuição de indicações por país
-3. Tendências e padrões ao longo do tempo
-4. Insights sobre vencedores e indicados em diferentes categorias.
+## O que o dashboard permite analisar
 
-## 2. Funcionalidades :gear:
+- evolução das cerimônias e categorias ao longo do tempo;
+- distribuição de indicações e vitórias;
+- desempenho de filmes, atores e atrizes;
+- notas, gêneros, países, bilheteria e outros atributos disponíveis para os filmes;
+- detalhes de um filme ou artista selecionado.
 
-1. **Filtros Interativos:** Permitem refinar os dados por ano, categoria, vencedor, indicado, entre outros critérios.
-2. **Gráficos e Visualizações:** Incluem gráficos de barras, linhas e tabelas para apresentar os dados de maneira clara e intuitiva.
-3. **Menu Retrátil:** Utilização de menus retráteis para facilitar a experiência do usuário ao navegar pelo dashboard.
+## Páginas do relatório
 
-## 3. Requisitos :desktop_computer:
+1. **Início** — capa e acesso à navegação principal.
+2. **Cerimônias** — indicadores, filtros e tabelas sobre indicações e vencedores.
+3. **Filmes** — tendências, rankings e características das obras.
+4. **Atores e atrizes** — análise de artistas indicados e premiados.
+5. **Sobre** — contexto e informações do projeto.
+6. **Detalhe de filmes** — visão individual da obra selecionada.
+7. **Detalhe de atores** — visão individual do artista selecionado.
 
-Para visualizar e interagir com o relatório, será necessário:
+## Como abrir
 
-1. Possuir versão de Maio/2024 ou mais recente do Power BI Desktop
-2. certifique-se de ter baixado o arquibo .pbix desta pasta, bem como a base de dados
+1. Baixe esta pasta completa.
+2. Abra `Oscar - Histórico.pbix` no Power BI Desktop.
+3. Caso a conexão esteja quebrada, acesse **Transformar dados** no Power Query.
+4. Em cada consulta que usa a planilha, atualize a etapa **Fonte** para o caminho local de `Database/Database.xlsx`.
+5. Selecione **Fechar e aplicar** e atualize o relatório.
 
-## 4. Como Usar :file_folder:
+## Estrutura da base
 
-1. Baixe o arquivo `Oscar - Histórico.pbix` e o arquivo `Database.xlsx` presentes neste repositório
-2. Ao abrir o arquivo .pbix citado no passo anterior, entre no Power Query ao clicar em 'Transformar Dados'
-3. Para cada consulta presente no Power Query, clique na etapa 'Fonte', e altere a localização da base de dados para o caminho em sua máquina local onde baixou o arquivo 'Database.xlsx'.
+A pasta `Database` contém uma planilha com quatro abas:
 
-## 5. Fonte de Dados :link:
+- `Filmes`: identificação e relacionamento dos filmes;
+- `Detalhes_Filmes`: metadados, avaliações, elenco, receita e orçamento quando disponíveis;
+- `Atores_Atrizes`: artistas, filmes, categorias, cerimônias e status de vitória;
+- `Dados_Oscar`: tabela principal de indicações e vencedores.
 
-Os dados utilizados para a criação deste relatório foram obtidos no seguinte link: https://www.kaggle.com/datasets/unanimad/the-oscar-award?resource=download
+Consulte [DATA_DICTIONARY.md](./DATA_DICTIONARY.md) para a descrição dos principais campos.
 
-## 6. Contribuições :handshake:
+## Fonte dos dados
 
-Caso tenha sugestões de melhorias ou encontre algum problema, sinta-se à vontade para fazer um fork do repositório, realizar as alterações necessárias e enviar um pull request.
+- Histórico das premiações: [The Oscar Award — Kaggle](https://www.kaggle.com/datasets/unanimad/the-oscar-award)
+- Informações complementares de filmes presentes na base incluem identificadores e campos associados ao IMDb, Rotten Tomatoes e Metacritic.
+
+## Limitações
+
+- Alguns filmes não possuem nota, orçamento, receita, pôster ou outros metadados complementares.
+- Categorias mudaram de nome e escopo ao longo da história; comparações entre décadas exigem contexto.
+- O arquivo `.pbix` é binário e precisa do Power BI Desktop para ser explorado.
+
+## Recursos visuais
+
+Os ícones, imagens e demais elementos usados no layout estão em [`Layout`](./Layout/). Mantenha essa pasta ao reutilizar ou evoluir a identidade visual do relatório.
