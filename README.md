@@ -21,27 +21,6 @@ Coleção de projetos de análise e visualização de dados desenvolvidos no Pow
 - organização de fontes Excel e integração com o Power Query;
 - comunicação visual e documentação de projetos de dados.
 
-## Estrutura do repositório
-
-```text
-.
-├── Oscar/
-│   ├── Database/          # Base de dados do projeto
-│   ├── Layout/            # Imagens, ícones e recursos visuais
-│   ├── Oscar - Histórico.pbix
-│   ├── DATA_DICTIONARY.md
-│   └── README.md
-├── População Brasileira - IBGE - 2020/
-│   ├── Database/          # Base de dados do projeto
-│   ├── População Brasileira Estimada - 2020 - IBGE.pbix
-│   ├── DATA_DICTIONARY.md
-│   └── README.md
-├── .gitattributes
-├── .gitignore
-├── CONTRIBUTING.md
-└── README.md
-```
-
 ## Como executar um projeto
 
 1. Instale o [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
