@@ -1,0 +1,19 @@
+# Power BI: arquivos temporários, cache e backup
+~$*.pbix
+*.pbix.tmp
+*.pbix.autosave
+*.bak
+
+# Microsoft Excel: arquivos de bloqueio temporários
+~$*.xlsx
+~$*.xls
+
+# Sistema operacional e editores
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+
+# Logs
+*.log

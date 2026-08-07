@@ -1,16 +1,65 @@
-# Relatórios Power BI :bar_chart:
-Bem-vindo ao meu Portfólio de Relatórios Power BI! Este repositório apresenta uma coleção de relatórios criados no Power BI Desktop, demonstrando minhas habilidades e conhecimentos em visualização de dados e análise de negócios. Cada relatório está organizado em sua própria pasta, com documentação detalhada e insights obtidos.
+# Portfólio de dashboards em Power BI
 
-## Índice :books:
-1. Relatórios :chart_with_upwards_trend:
-2. Documentação dos Relatórios :memo:
-3. Insights Obtidos :bulb:
+[![Power BI](https://img.shields.io/badge/Power%20BI-Portfolio-F2C811?logo=powerbi&logoColor=000)](https://powerbi.microsoft.com/)
+![Projetos](https://img.shields.io/badge/projetos-2-2563EB)
+![Idioma](https://img.shields.io/badge/documentação-pt--BR-009C3B)
 
+Coleção de projetos de análise e visualização de dados desenvolvidos no Power BI Desktop. O repositório reúne os arquivos `.pbix`, as bases utilizadas e a documentação necessária para compreender, reproduzir e explorar cada dashboard.
 
-## Uso :gear:
-Cada pasta de relatório contém um arquivo README.md detalhado com instruções sobre como abrir o arquivo .pbix no Power BI Desktop e explorar os dados e visualizações. Certifique-se de seguir as instruções cuidadosamente para configurar o ambiente e visualizar os relatórios corretamente.
+## Projetos
 
-## Contribuição :handshake:
-Contribuições são bem-vindas! Se você tiver alguma ideia de melhorias ou novos projetos, sinta-se à vontade para fazer um fork do repositório, fazer suas alterações e enviar um pull request. Por favor, assegure-se de que suas contribuições aderem aos padrões de codificação e diretrizes do repositório.
+| Projeto | Escopo | Destaques | Acesso |
+| --- | --- | --- | --- |
+| Premiações do Oscar | Filmes de 1927 a 2022 e cerimônias até 2023 | 10.764 registros, 115 categorias, navegação por cerimônias, filmes e artistas | [Documentação](./Oscar/README.md) · [Dicionário de dados](./Oscar/DATA_DICTIONARY.md) |
+| População brasileira — IBGE 2020 | Estimativas populacionais dos 5.570 municípios | Mapas, rankings, análise por região e estado, coordenadas geográficas | [Documentação](./População%20Brasileira%20-%20IBGE%20-%202020/README.md) · [Dicionário de dados](./População%20Brasileira%20-%20IBGE%20-%202020/DATA_DICTIONARY.md) |
 
-Obrigado por visitar meu Portfólio de Relatórios Power BI! Se você tiver alguma dúvida ou feedback, sinta-se à vontade para entrar em contato. :email:
+## Competências demonstradas
+
+- modelagem e preparação de dados para análise;
+- construção de dashboards interativos e navegação entre páginas;
+- uso de filtros, cartões, tabelas, gráficos e mapas;
+- organização de fontes Excel e integração com o Power Query;
+- comunicação visual e documentação de projetos de dados.
+
+## Estrutura do repositório
+
+```text
+.
+├── Oscar/
+│   ├── Database/          # Base de dados do projeto
+│   ├── Layout/            # Imagens, ícones e recursos visuais
+│   ├── Oscar - Histórico.pbix
+│   ├── DATA_DICTIONARY.md
+│   └── README.md
+├── População Brasileira - IBGE - 2020/
+│   ├── Database/          # Base de dados do projeto
+│   ├── População Brasileira Estimada - 2020 - IBGE.pbix
+│   ├── DATA_DICTIONARY.md
+│   └── README.md
+├── .gitattributes
+├── .gitignore
+├── CONTRIBUTING.md
+└── README.md
+```
+
+## Como executar um projeto
+
+1. Instale o [Power BI Desktop](https://powerbi.microsoft.com/desktop/).
+2. Baixe a pasta completa do projeto escolhido, preservando o arquivo `.pbix` e sua base `.xlsx`.
+3. Abra o arquivo `.pbix` no Power BI Desktop.
+4. Se a fonte não for encontrada, abra **Transformar dados**, selecione cada consulta e atualize a etapa **Fonte** com o caminho local da planilha.
+5. Aplique as alterações e atualize o relatório.
+
+> Os arquivos `.pbix` são binários e não podem ser visualizados diretamente pelo GitHub. Para interagir com os dashboards, faça o download e use o Power BI Desktop no Windows.
+
+## Fontes e limitações
+
+As fontes específicas, o período de cobertura e as limitações de cada conjunto de dados estão descritos no README de cada projeto. Os resultados devem ser interpretados de acordo com a data e a metodologia da fonte original.
+
+## Contribuição
+
+Sugestões, correções e melhorias são bem-vindas. Antes de enviar uma alteração, consulte o [guia de contribuição](./CONTRIBUTING.md).
+
+---
+
+Desenvolvido por [William Araujo](https://github.com/willra1993).
